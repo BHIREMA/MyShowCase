@@ -2,6 +2,8 @@ package com.jaxws.series.bottom.up.approach.service;
 
 import javax.jws.WebService;
 
+//need to configure the projects
+
 @WebService(serviceName="BookService", endpointInterface="com.jaxws.series.bottom.up.approach.service.IBookService", portName="BookServicePort")
 public class BookServiceImpl implements IBookService {
 
