@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://service.approach.up.bottom.series.jaxws.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://service.approach.up.bottom.series.jaxws.com/">
+
+  <xs:element name="getBookNameBasedOnISBN" type="tns:getBookNameBasedOnISBN"/>
+
+  <xs:element name="getBookNameBasedOnISBNResponse" type="tns:getBookNameBasedOnISBNResponse"/>
+
+  <xs:complexType name="getBookNameBasedOnISBN">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getBookNameBasedOnISBNResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
